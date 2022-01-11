@@ -2,12 +2,15 @@
   "name": "cryptotracker",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
+  "homepage": "https://sacden.github.io/react-native-crypto-tracker/",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@expo-google-fonts/inter": "^0.2.0",
@@ -36,7 +39,8 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
-    "@expo/webpack-config": "^0.16.15"
+    "@expo/webpack-config": "^0.16.15",
+    "gh-pages": "^3.2.3"
   },
   "private": true
 }
